@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fitness Tools</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calculate_bmi">Calculate BMI</string>
+    <string name="title_activity_max_heart_rate">Maximum Heart Rate</string>
+    <string name="mhrResult">Your max heart rate is: </string>
+
+</resources>
