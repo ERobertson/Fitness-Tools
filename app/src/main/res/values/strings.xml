@@ -6,5 +6,14 @@
     <string name="title_activity_calculate_bmi">Calculate BMI</string>
     <string name="title_activity_max_heart_rate">Maximum Heart Rate</string>
     <string name="mhrResult">Your max heart rate is: </string>
-
+    <string name="btnBMI">Body Mass Index</string>
+    <string name="btnMHR">Maximum Heart Rate</string>
+    <string name="calculate">Calculate</string>
+    <string name="Calculators">Calculators</string>
+    <string name="questionAge">Please enter your age: </string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="bmiResult">Your BMI is: </string>
 </resources>

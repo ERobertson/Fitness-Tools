@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 public class CalculateBMI extends ActionBarActivity {
     private Button btnCalculate;
-    private Button btnHome;
     private EditText txtFeet;
     private EditText txtInches;
     private EditText txtWeight;
@@ -23,19 +22,7 @@ public class CalculateBMI extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculate_bmi);
-        setHomeOnClick();
         setCalculateOnClick();
-    }
-
-    private void setHomeOnClick(){
-        btnHome = (Button) findViewById(R.id.btnHome);
-        btnHome.setOnClickListener(new View.OnClickListener(){
-            @Override
-        public void onClick(View v){
-                Intent goHomeIntent = new Intent(CalculateBMI.this, MainActivity.class);
-                startActivity(goHomeIntent);
-            }
-        });
     }
 
     private void setCalculateOnClick() {
@@ -54,7 +41,7 @@ public class CalculateBMI extends ActionBarActivity {
                 weight = Float.valueOf(txtWeight.getText().toString());
                 inches = Float.valueOf(txtFeet.getText().toString()) * 12 + Float.valueOf(txtInches.getText().toString());
                 bmi = (weight / (inches * inches)) * 703;
-                lblResult.setText(String.valueOf(bmi));
+                lblResult.setText(R.string.bmiResult + String.valueOf(bmi));
             }
         });
     }

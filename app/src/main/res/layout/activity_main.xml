@@ -8,7 +8,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Body Mass Index"
+        android:text="@string/btnBMI"
         android:id="@+id/btnCalculateBMI"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -17,7 +17,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Max Heart Rate"
+        android:text="@string/btnMHR"
         android:id="@+id/btnCalculateMHR"
         android:layout_below="@+id/btnCalculateBMI"
         android:layout_centerHorizontal="true"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Calculators"
+        android:text="@string/Calculators"
         android:id="@+id/lblHeader"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 
 public class MaxHeartRate extends ActionBarActivity {
-    private Button btnHome;
     private Button btnCalculate;
     private TextView lblResult;
     private EditText txtAge;
@@ -23,19 +22,7 @@ public class MaxHeartRate extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_max_heart_rate);
 
-        setHomeOnClick();
         setCalculateOnClick();
-    }
-
-    private void setHomeOnClick(){
-        btnHome = (Button) findViewById(R.id.btnHome);
-        btnHome.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent goHomeIntent = new Intent(MaxHeartRate.this, MainActivity.class);
-                startActivity(goHomeIntent);
-            }
-        });
     }
 
     private void setCalculateOnClick(){
@@ -48,8 +35,7 @@ public class MaxHeartRate extends ActionBarActivity {
         public void onClick(View v){
                 Integer maxRate;
                 maxRate = 220 - Integer.valueOf(txtAge.getText().toString());
-                //Toast.makeText(MaxHeartRate.this, R.string.mhrResult + String.valueOf(maxRate), Toast.LENGTH_LONG).show();
-                lblResult.setText("Your max heart rate is: " + String.valueOf(maxRate));
+                lblResult.setText(R.string.mhrResult + String.valueOf(maxRate));
             }
         });
 
